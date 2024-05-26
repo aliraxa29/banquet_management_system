@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"7cbreSsr0d\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Banquet Management System</span>\",\"col\":12}},{\"id\":\"hCvP32oEq7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Banquet\",\"col\":3}},{\"id\":\"mPbzopdEDW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Banquet Booking\",\"col\":3}},{\"id\":\"ooR5YIC9yZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visitor\",\"col\":3}},{\"id\":\"AaX749sMBB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Menu Category\",\"col\":3}},{\"id\":\"hXZjO9yWKP\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"GD9XG41Zf3\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}}]",
+ "content": "[{\"id\":\"7cbreSsr0d\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Banquet Management System</span>\",\"col\":12}},{\"id\":\"hCvP32oEq7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Banquet\",\"col\":3}},{\"id\":\"HOTRxT2Wge\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Menu Item\",\"col\":3}},{\"id\":\"mPbzopdEDW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Banquet Booking\",\"col\":3}},{\"id\":\"ooR5YIC9yZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visitor\",\"col\":3}},{\"id\":\"AaX749sMBB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Menu Category\",\"col\":3}},{\"id\":\"hXZjO9yWKP\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"GD9XG41Zf3\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}}]",
  "creation": "2024-05-26 01:49:49.292482",
  "custom_blocks": [],
  "docstatus": 0,
@@ -83,7 +83,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-05-26 10:56:26.579198",
+ "modified": "2024-05-26 11:36:22.063574",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Management System",
@@ -117,6 +117,15 @@
    "doc_view": "List",
    "label": "Banquet Booking",
    "link_to": "Banquet Booking",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Available",
+   "label": "Menu Item",
+   "link_to": "Menu Item",
    "stats_filter": "[]",
    "type": "DocType"
   },

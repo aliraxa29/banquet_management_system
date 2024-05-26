@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:item_name",
  "creation": "2024-05-26 10:35:46.386953",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,6 +11,7 @@
   "menu_category",
   "column_break_amlv",
   "price",
+  "status",
   "section_break_nuqn",
   "description"
  ],
@@ -20,7 +22,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Item Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "column_break_amlv",
@@ -46,21 +49,34 @@
   {
    "fieldname": "menu_category",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Menu Category",
-   "options": "Menu Category"
+   "options": "Menu Category",
+   "reqd": 1
   },
   {
    "fieldname": "basic_detail_section",
    "fieldtype": "Section Break",
    "label": "Basic Detail"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Available\nNot Available",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-26 10:39:12.292428",
+ "modified": "2024-05-26 11:34:49.775473",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Menu Item",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -78,5 +94,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "item_name",
+ "track_changes": 1
 }
