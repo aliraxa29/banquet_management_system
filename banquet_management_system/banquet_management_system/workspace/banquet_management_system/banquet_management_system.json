@@ -17,7 +17,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Master Data",
-   "link_count": 5,
+   "link_count": 6,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -65,6 +65,16 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Menu Item",
+   "link_count": 0,
+   "link_to": "Menu Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Visitor",
    "link_count": 0,
    "link_to": "Visitor",
@@ -73,7 +83,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-05-26 10:21:29.286256",
+ "modified": "2024-05-26 10:56:26.579198",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Management System",

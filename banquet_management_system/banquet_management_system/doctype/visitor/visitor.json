@@ -9,8 +9,11 @@
   "visitor_details_section",
   "customer_name",
   "phone_no",
+  "cnic_no",
   "column_break_lfed",
-  "visit_date"
+  "visit_date",
+  "email",
+  "address"
  ],
  "fields": [
   {
@@ -21,27 +24,51 @@
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name"
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
   },
   {
    "fieldname": "phone_no",
    "fieldtype": "Data",
-   "label": "Phone No"
+   "in_list_view": 1,
+   "label": "Phone No",
+   "reqd": 1
   },
   {
    "default": "Today",
    "fieldname": "visit_date",
    "fieldtype": "Date",
-   "label": "Visit Date"
+   "in_list_view": 1,
+   "label": "Visit Date",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lfed",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cnic_no",
+   "fieldtype": "Data",
+   "label": "CNIC No"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-26 02:13:45.979260",
+ "modified": "2024-05-26 10:28:33.103556",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Visitor",

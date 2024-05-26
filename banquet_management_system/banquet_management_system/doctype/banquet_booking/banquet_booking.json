@@ -8,7 +8,19 @@
  "field_order": [
   "section_break_wzfg",
   "naming_series",
-  "amended_from"
+  "visitor",
+  "banquet",
+  "event_type",
+  "menu_category",
+  "column_break_wklh",
+  "posting_datetime",
+  "event_from",
+  "event_to",
+  "expected_persons",
+  "selected_menu_items_section",
+  "selected_menu",
+  "terms_and_condition_and_pricing_section",
+  "t_and_c"
  ],
  "fields": [
   {
@@ -23,20 +35,81 @@
    "options": "BAN-BOOK-"
   },
   {
-   "fieldname": "amended_from",
+   "fieldname": "visitor",
    "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Banquet Booking",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "label": "Visitor",
+   "options": "Visitor"
+  },
+  {
+   "fieldname": "banquet",
+   "fieldtype": "Link",
+   "label": "Banquet",
+   "options": "Banquet"
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Link",
+   "label": "Event Type",
+   "options": "Event Type"
+  },
+  {
+   "fieldname": "column_break_wklh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_datetime",
+   "fieldtype": "Datetime",
+   "label": "Posting DateTime"
+  },
+  {
+   "fieldname": "event_from",
+   "fieldtype": "Date",
+   "label": "Event From"
+  },
+  {
+   "fieldname": "event_to",
+   "fieldtype": "Date",
+   "label": "Event To"
+  },
+  {
+   "default": "0",
+   "fieldname": "expected_persons",
+   "fieldtype": "Int",
+   "label": "Expected Persons"
+  },
+  {
+   "fieldname": "menu_category",
+   "fieldtype": "Link",
+   "label": "Menu Category",
+   "options": "Menu Category"
+  },
+  {
+   "fieldname": "selected_menu_items_section",
+   "fieldtype": "Section Break",
+   "label": "Selected Menu Items"
+  },
+  {
+   "fieldname": "selected_menu",
+   "fieldtype": "Table",
+   "label": "Selected Menu",
+   "options": "Selected Menu"
+  },
+  {
+   "fieldname": "terms_and_condition_and_pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Terms and condition and Pricing"
+  },
+  {
+   "fieldname": "t_and_c",
+   "fieldtype": "Link",
+   "label": "Terms & Condition",
+   "options": "Terms and Conditions"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-26 02:10:50.612134",
+ "modified": "2024-05-26 10:53:41.559084",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Booking",

@@ -11,7 +11,9 @@
   "address",
   "column_break_ooyg",
   "status",
-  "persons_capacity"
+  "persons_capacity",
+  "location_section",
+  "banquet_location"
  ],
  "fields": [
   {
@@ -48,11 +50,22 @@
    "fieldname": "persons_capacity",
    "fieldtype": "Int",
    "label": "Persons Capacity"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "banquet_location",
+   "fieldtype": "Geolocation",
+   "label": "Banquet Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-26 10:22:04.447875",
+ "modified": "2024-05-26 10:30:42.878817",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet",
