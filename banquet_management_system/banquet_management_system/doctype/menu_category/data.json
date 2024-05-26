@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Cold Appetizers"
+    },
+    {
+        "name": "Hot Appetizers"
+    },
+    {
+        "name": "Soups"
+    },
+    {
+        "name": "Salads"
+    },
+    {
+        "name": "Meat Dishes (e.g., beef, pork, lamb)"
+    },
+    {
+        "name": "Poultry Dishes (e.g., chicken, turkey)"
+    },
+    {
+        "name": "Seafood Dishes (e.g., fish, shrimp, lobster)"
+    },
+    {
+        "name": "Vegetarian/Vegan Dishes"
+    },
+    {
+        "name": "Vegetables"
+    },
+    {
+        "name": "Starches (e.g., potatoes, rice, pasta)"
+    },
+    {
+        "name": "Cakes and Pastries"
+    },
+    {
+        "name": "Pies and Tarts"
+    },
+    {
+        "name": "Ice Cream and Sorbets"
+    },
+    {
+        "name": "Fresh Fruit"
+    },
+    {
+        "name": "Non-Alcoholic (e.g., soft drinks, juices, water, coffee, tea)"
+    },
+    {
+        "name": "Alcoholic (e.g., wine, beer, spirits, cocktails)"
+    },
+    {
+        "name": "Various types of bread and rolls"
+    },
+    {
+        "name": "Butter and spreads"
+    },
+    {
+        "name": "Carving Stations (e.g., roast beef, ham)"
+    },
+    {
+        "name": "Pasta Stations"
+    },
+    {
+        "name": "Seafood Stations"
+    },
+    {
+        "name": "Sushi Stations"
+    },
+    {
+        "name": "Dessert Stations"
+    },
+    {
+        "name": "Breakfast Buffets (e.g., eggs, bacon, pastries)"
+    },
+    {
+        "name": "Brunch Buffets"
+    },
+    {
+        "name": "Lunch Buffets"
+    },
+    {
+        "name": "Dinner Buffets"
+    },
+    {
+        "name": "Child-friendly appetizers"
+    },
+    {
+        "name": "Main courses suitable for kids"
+    },
+    {
+        "name": "Desserts for kids"
+    },
+    {
+        "name": "Beverages for kids"
+    },
+    {
+        "name": "Gluten-Free"
+    },
+    {
+        "name": "Dairy-Free"
+    },
+    {
+        "name": "Nut-Free"
+    },
+    {
+        "name": "Kosher"
+    },
+    {
+        "name": "Halal"
+    }
+]
