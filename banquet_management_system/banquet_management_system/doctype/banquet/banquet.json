@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:banquet_name",
  "creation": "2024-05-26 01:55:12.770154",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,7 +10,8 @@
   "banquet_name",
   "address",
   "column_break_ooyg",
-  "status"
+  "status",
+  "persons_capacity"
  ],
  "fields": [
   {
@@ -20,7 +22,8 @@
   {
    "fieldname": "banquet_name",
    "fieldtype": "Data",
-   "label": "Banquet Name"
+   "label": "Banquet Name",
+   "unique": 1
   },
   {
    "fieldname": "address",
@@ -34,17 +37,26 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Available\nBooked\nNo In Service",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "persons_capacity",
+   "fieldtype": "Int",
+   "label": "Persons Capacity"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-26 01:56:51.878061",
+ "modified": "2024-05-26 10:22:04.447875",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -62,5 +74,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "banquet_name",
+ "track_changes": 1
 }
