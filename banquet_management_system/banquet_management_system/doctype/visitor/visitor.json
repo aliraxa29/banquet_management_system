@@ -67,8 +67,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-05-26 10:28:33.103556",
+ "links": [
+  {
+   "link_doctype": "Banquet Booking",
+   "link_fieldname": "visitor"
+  }
+ ],
+ "modified": "2024-05-27 11:21:22.216479",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Visitor",
