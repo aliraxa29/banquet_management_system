@@ -18,6 +18,20 @@
 - **Reports**
 - & Much More
 
+## Dependencies
+- Frappe Framework
+- ERPNext
+
+## Installation
+Banquet Management System support Frappe Version 15 and ERPNext version 15. To begin installation just follow these steps.
+
+```sh
+bench get-app https://github.com/aliraxa29/banquet_management_system.git
+```
+```sh
+bench --site yoursite install-app banquet_management_system
+```
+
 
 ## Support
 
