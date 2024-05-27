@@ -28,7 +28,8 @@
   "column_break_fvys",
   "total_per_person",
   "grand_total",
-  "total_in_words"
+  "total_in_words",
+  "amended_from"
  ],
  "fields": [
   {
@@ -70,15 +71,17 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Now",
    "fieldname": "event_from",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "in_list_view": 1,
    "label": "Event From",
    "reqd": 1
   },
   {
+   "default": "Now",
    "fieldname": "event_to",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Event To",
    "reqd": 1
   },
@@ -170,13 +173,23 @@
    "hidden": 1,
    "label": "Customer Signature",
    "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Banquet Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-27 22:41:04.669807",
+ "modified": "2024-05-27 22:47:58.460836",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Booking",
