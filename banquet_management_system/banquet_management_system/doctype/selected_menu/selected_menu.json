@@ -26,26 +26,32 @@
    "label": "Description"
   },
   {
+   "default": "1",
    "fieldname": "qty",
    "fieldtype": "Int",
-   "label": "Qty"
+   "label": "Qty",
+   "non_negative": 1
   },
   {
+   "fetch_from": "menu_item.price",
    "fieldname": "price",
    "fieldtype": "Currency",
-   "label": "Price"
+   "label": "Price",
+   "non_negative": 1,
+   "precision": "2"
   },
   {
    "fieldname": "amount",
    "fieldtype": "Currency",
    "label": "Amount",
+   "non_negative": 1,
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-26 10:42:49.466774",
+ "modified": "2024-05-27 15:09:36.192585",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Selected Menu",

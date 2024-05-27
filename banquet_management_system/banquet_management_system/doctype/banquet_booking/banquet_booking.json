@@ -9,18 +9,24 @@
   "section_break_wzfg",
   "naming_series",
   "visitor",
+  "visitor_name",
   "banquet",
-  "event_type",
+  "banquet_name",
   "menu_category",
   "column_break_wklh",
-  "posting_datetime",
+  "now",
   "event_from",
   "event_to",
   "expected_persons",
+  "event_type",
   "selected_menu_items_section",
   "selected_menu",
   "terms_and_condition_and_pricing_section",
-  "t_and_c"
+  "t_and_c",
+  "amended_from",
+  "column_break_fvys",
+  "grand_total",
+  "total_in_words"
  ],
  "fields": [
   {
@@ -37,14 +43,19 @@
   {
    "fieldname": "visitor",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Visitor",
-   "options": "Visitor"
+   "options": "Visitor",
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "banquet",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Banquet",
-   "options": "Banquet"
+   "options": "Banquet",
+   "reqd": 1
   },
   {
    "fieldname": "event_type",
@@ -57,25 +68,25 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "posting_datetime",
-   "fieldtype": "Datetime",
-   "label": "Posting DateTime"
-  },
-  {
    "fieldname": "event_from",
    "fieldtype": "Date",
-   "label": "Event From"
+   "in_list_view": 1,
+   "label": "Event From",
+   "reqd": 1
   },
   {
    "fieldname": "event_to",
    "fieldtype": "Date",
-   "label": "Event To"
+   "label": "Event To",
+   "reqd": 1
   },
   {
    "default": "0",
    "fieldname": "expected_persons",
    "fieldtype": "Int",
-   "label": "Expected Persons"
+   "label": "Expected Persons",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "menu_category",
@@ -104,12 +115,58 @@
    "fieldtype": "Link",
    "label": "Terms & Condition",
    "options": "Terms and Conditions"
+  },
+  {
+   "fetch_from": "visitor.customer_name",
+   "fieldname": "visitor_name",
+   "fieldtype": "Read Only",
+   "label": "Visitor Name"
+  },
+  {
+   "fetch_from": "banquet.banquet_name",
+   "fieldname": "banquet_name",
+   "fieldtype": "Read Only",
+   "label": "Banquet Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Banquet Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_fvys",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_in_words",
+   "fieldtype": "Data",
+   "label": "Total In Words",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "now",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Posting DateTime",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-26 10:53:41.559084",
+ "modified": "2024-05-27 15:55:48.058731",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Booking",
