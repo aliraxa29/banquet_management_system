@@ -4,10 +4,11 @@
 import frappe
 from frappe.model.document import Document
 from frappe import _
-from frappe.utils import money_in_words, cint
+from frappe.utils import money_in_words, cint, now
 
 class BanquetBooking(Document):
     def validate(self):
+        self.posting_datetime = now()
         if not self.selected_menu:
             frappe.throw(_('Please select menu items to proceed to save'))
             

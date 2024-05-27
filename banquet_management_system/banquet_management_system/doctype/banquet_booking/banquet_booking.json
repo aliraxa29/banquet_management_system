@@ -4,6 +4,7 @@
  "autoname": "naming_series:",
  "creation": "2024-05-26 02:08:56.176764",
  "doctype": "DocType",
+ "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
   "section_break_wzfg",
@@ -14,7 +15,7 @@
   "banquet_name",
   "menu_category",
   "column_break_wklh",
-  "now",
+  "posting_datetime",
   "event_from",
   "event_to",
   "expected_persons",
@@ -25,6 +26,7 @@
   "t_and_c",
   "amended_from",
   "column_break_fvys",
+  "total_per_person",
   "grand_total",
   "total_in_words"
  ],
@@ -103,7 +105,8 @@
    "fieldname": "selected_menu",
    "fieldtype": "Table",
    "label": "Selected Menu",
-   "options": "Selected Menu"
+   "options": "Selected Menu",
+   "reqd": 1
   },
   {
    "fieldname": "terms_and_condition_and_pricing_section",
@@ -155,18 +158,27 @@
    "read_only": 1
   },
   {
-   "default": "Today",
-   "fieldname": "now",
+   "default": "Now",
+   "fieldname": "posting_datetime",
    "fieldtype": "Datetime",
    "in_list_view": 1,
    "label": "Posting DateTime",
+   "read_only": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "total_per_person",
+   "fieldtype": "Currency",
+   "label": "Total Per Person",
+   "non_negative": 1,
+   "precision": "2"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-27 15:55:48.058731",
+ "modified": "2024-05-27 22:13:48.370319",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Booking",
@@ -190,5 +202,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "visitor_name",
  "track_changes": 1
 }
