@@ -25,10 +25,10 @@ function calculateTotals(frm, cdt, cdn) {
 }
 
 function setTotalValue(frm) {
-    var total_amount = 0;
+    var total_per_person = 0;
     $.each(frm.doc.selected_menu || [], function(i, row) {
-        total_amount += row.amount || 0;
+        total_per_person += row.amount || 0;
     });
-    frm.set_value('grand_total', total_amount);
-    frm.set_value('total_in_words', frappe.utils.money_in_words(total_amount))
+    frm.set_value('total_per_person', total_per_person);
+    frm.set_value('grand_total', total_per_person * frm.doc.expected_persons)
 }

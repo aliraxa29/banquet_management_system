@@ -19,10 +19,11 @@ class BanquetBooking(Document):
         
     
     def calculate_totals(self):
-        grand_total = 0
+        total_per_person = 0
         for item in self.selected_menu:
             item.amount = item.qty * item.price
-            grand_total += item.amount
+            total_per_person += item.amount
             
-        self.grand_total = grand_total
+        self.total_per_person = total_per_person
+        self.grand_total = self.total_per_person * cint(self.expected_persons)
         self.total_in_words = money_in_words(self.grand_total)

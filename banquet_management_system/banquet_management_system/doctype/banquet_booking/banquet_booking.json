@@ -24,7 +24,7 @@
   "selected_menu",
   "terms_and_condition_and_pricing_section",
   "t_and_c",
-  "amended_from",
+  "customer_signature",
   "column_break_fvys",
   "total_per_person",
   "grand_total",
@@ -132,16 +132,6 @@
    "label": "Banquet Name"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Banquet Booking",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
    "fieldname": "column_break_fvys",
    "fieldtype": "Column Break"
   },
@@ -171,14 +161,22 @@
    "fieldtype": "Currency",
    "label": "Total Per Person",
    "non_negative": 1,
-   "precision": "2"
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_signature",
+   "fieldtype": "Signature",
+   "hidden": 1,
+   "label": "Customer Signature",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-27 22:13:48.370319",
+ "modified": "2024-05-27 22:41:04.669807",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Booking",
