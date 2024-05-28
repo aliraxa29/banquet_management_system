@@ -6,5 +6,6 @@ frappe.views.calendar["Banquet Booking"] = {
 		title: "visitor_name",
 		allDay: "allDay",
 		progress: "progress",
-    }
+    },
+	gantt: false,
 }

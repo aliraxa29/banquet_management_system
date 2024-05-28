@@ -4,7 +4,18 @@ app_publisher = "Ali Raza"
 app_description = "A complete Banquete, Marquee, and Marriage Hall management system"
 app_email = "soundsofnation29@gmail.com"
 app_license = "mit"
-# required_apps = []
+required_apps = ["erpnext"]
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "in", [
+                "Sales Invoice-custom_banquet_booking"
+            ]]
+        ]
+    }
+]
 
 # Includes in <head>
 # ------------------

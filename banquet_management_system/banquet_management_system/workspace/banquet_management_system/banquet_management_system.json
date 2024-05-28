@@ -83,7 +83,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-05-26 11:36:22.063574",
+ "modified": "2024-05-28 08:58:37.078748",
  "modified_by": "Administrator",
  "module": "Banquet Management System",
  "name": "Banquet Management System",
@@ -95,6 +95,15 @@
  "roles": [],
  "sequence_id": 28.0,
  "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "format": "{} Submitted",
+   "label": "Banquet Booking",
+   "link_to": "Banquet Booking",
+   "stats_filter": "[[\"Banquet Booking\",\"docstatus\",\"=\",\"1\",false]]",
+   "type": "DocType"
+  },
   {
    "color": "Green",
    "doc_view": "List",
@@ -109,14 +118,6 @@
    "doc_view": "List",
    "label": "Visitor",
    "link_to": "Visitor",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Banquet Booking",
-   "link_to": "Banquet Booking",
    "stats_filter": "[]",
    "type": "DocType"
   },
